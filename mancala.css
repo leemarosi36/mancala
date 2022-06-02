@@ -6,7 +6,7 @@ body {
     background-color: #bb9721;
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
-    background-image: linear-gradient(to bottom, #3399CC, #C2E0F0, #3399CC);
+    background-image: linear-gradient(to bottom, #accde6, #e7eff3, #accde6);
 }
 
 header {
@@ -24,10 +24,10 @@ h1 {
 
 nav {
     font-weight: bold;
+    font-size: 20px;
     float: left;
     width: 160px;
     padding: 0%;
-
 
 }
 
@@ -64,7 +64,6 @@ footer {
     margin-right: auto;
     margin-left: auto;
     background-color: #bb9721;
-    ;
     min-width: 700px;
     max-width: 1024px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -79,9 +78,17 @@ main {
     padding-bottom: 1px;
 }
 
-#mancalapicture {
+#mancalahomepicture {
     height: 300px;
     background-image: url(images/mancala.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 170px;
+}
+
+#mancalaobjectivepicture {
+    height: 300px;
+    background-image: url(images/mancalaobjective.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-left: 170px;
@@ -116,13 +123,7 @@ footer {
     display: block;
 }
 
-#mobile {
-    display: none;
-}
 
-#desktop {
-    display: inline;
-}
 
 @media only screen and (max-width: 1024px) {
     body {
@@ -169,17 +170,15 @@ footer {
         margin: 0;
     }
 
-    #homehero {
+    #mancalahomepicture {
         margin-left: 0;
     }
 
-    #yurthero {
+    #mancalaobjectivepicture {
         margin-left: 0;
     }
 
-    #trailhero {
-        margin-left: 0;
-    }
+
 }
 
 @media only all and (max-width: 768px) {
@@ -218,15 +217,11 @@ footer {
         padding-left: 0.4em;
     }
 
-    #homehero {
+    #mancalahomepicture {
         display: none;
     }
 
-    #yurthero {
-        display: none;
-    }
-
-    #trailhero {
+    #mancalaobjectivepicture {
         display: none;
     }
 
@@ -234,13 +229,7 @@ footer {
         padding: 0;
     }
 
-    #mobile {
-        display: inline;
-    }
 
-    #desktop {
-        display: none;
-    }
 }
 
 table {
